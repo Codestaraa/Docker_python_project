@@ -24,7 +24,7 @@ jobs:
 
       # Cache pip dependencies for faster builds (optional)
       - name: Cache pip dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
