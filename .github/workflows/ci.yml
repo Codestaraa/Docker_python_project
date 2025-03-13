@@ -40,9 +40,9 @@ jobs:
         run: |
           python -m pip install pytest
 
-      # Debug Pytest Test Collection
-      - name: Debug Pytest Test Collection
-        run: pytest --collect-only  # This will list the tests pytest detects
+      - name: List files  # Debug step to list files in the current directory
+        run: |
+          ls -la
 
       - name: Run tests
         run: |
